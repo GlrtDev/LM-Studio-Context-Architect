@@ -1,0 +1,7 @@
+{
+  "type": "plugin",
+  "runner": "node",
+  "owner": "glrtdev",
+  "name": "token-efficient-rag",
+  "revision": 1
+}
