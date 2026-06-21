@@ -25,4 +25,30 @@ export const configSchematics = createConfigSchematics()
     },
     0.5,
   )
+  .field(
+    "targetExtensions",
+    "string",
+    {
+      displayName: "Target Extensions",
+      subtitle: "Comma-separated list of extensions (e.g., .cs,.ts,.js)",
+    },
+    ".cs,.ts,.js",
+  ).field(
+    "autoContextDirectory",
+    "string",
+    {
+      displayName: "Auto-load Directory",
+      subtitle: "Absolute path to a folder. Files here will be automatically included in your prompt based on relevance.",
+    },
+    "", // Default empty
+  ).field(
+    "injectionThreshold",
+    "numeric",
+    {
+      displayName: "Injection Threshold",
+      subtitle: "Maximum tokens allowed before switching from full injection to RAG.",
+      slider: { min: 500, max: 10000, step: 500 },
+    },
+    3000, // Default value
+  )
   .build();

@@ -10,10 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@lmstudio/sdk": "1.4.0",
+    "@lmstudio/sdk": "^1.4.0",
     "zod": "3.24.1"
   },
   "devDependencies": {
-    "@types/node": "^20.14.8"
+    "@types/node": "^20.19.42"
   }
 }
